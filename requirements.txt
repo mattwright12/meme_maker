@@ -1,0 +1,6 @@
+You will need Python 3 and the following libraries:
+  PIL
+  markovify
+  pandas
+  google_images_downloader
+  sklearn
