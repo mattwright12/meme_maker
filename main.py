@@ -69,10 +69,10 @@ def make_meme(topString, bottomString, filename, name):
 
 def get_image(title):
     response = google_images_download.googleimagesdownload()
-    
-    arguments = {"keywords":"{}".format(title),"limit":1,"print_urls":True}
+    search = title + ' original'
+    arguments = {"keywords":"{}".format(search),"limit":1,"print_urls":True}
     paths = response.download(arguments)
-    image_path = paths[title]
+    image_path = paths[search]
     return image_path
     
     
